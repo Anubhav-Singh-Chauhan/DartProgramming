@@ -10,11 +10,18 @@ class Person
   //   age=newAge;
   //   name=newName;
   }
+  Person.veryOld(this.name)
+  {
+    age=60;
+  }
 }
 
 void main()
 {
   var p1 = Person(age: 20,name: 'Max');
+  var p2=Person.veryOld('Max');
+  print(p2.name);
+  print(p2.age);
   print(p1.age);
   print(p1.name);
 }
